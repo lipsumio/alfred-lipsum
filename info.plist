@@ -50,11 +50,11 @@
 				<key>runningsubtext</key>
 				<string>Fetching ...</string>
 				<key>script</key>
-				<string>python lipsum.py "{query}"</string>
+				<string>python lipsum-paragraph.py "{query}"</string>
 				<key>subtext</key>
-				<string>Lorem Ipsum - generate paragraph of Lorem Ipsum</string>
+				<string>Lorem Ipsum - generate paragraphs of Lorem Ipsum</string>
 				<key>title</key>
-				<string>lipsum</string>
+				<string>lipsum - paragraph</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
