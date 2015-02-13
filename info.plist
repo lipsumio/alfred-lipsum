@@ -8,7 +8,40 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>352B093C-258E-4E08-BD07-2FD051AEA8D6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B848A929-7C71-4C67-9421-A89F88EF9D3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B8515109-A2CE-45D1-816B-6517B1964C24</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B848A929-7C71-4C67-9421-A89F88EF9D3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>BF23C4F2-2434-4FFF-AF97-6B31600CF619</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B848A929-7C71-4C67-9421-A89F88EF9D3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>E6B8B929-1A35-43DA-BFDC-9248CBEA41BE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -54,7 +87,7 @@
 				<key>subtext</key>
 				<string>Lorem Ipsum - generate paragraphs of Lorem Ipsum</string>
 				<key>title</key>
-				<string>lipsum - paragraph</string>
+				<string>lipsum</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -82,20 +115,146 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>lipsum</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching ...</string>
+				<key>script</key>
+				<string>python lipsum-list.py "{query}"</string>
+				<key>subtext</key>
+				<string>Lorem Ipsum - generate lists of Lorem Ipsum</string>
+				<key>title</key>
+				<string>lipsum</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E6B8B929-1A35-43DA-BFDC-9248CBEA41BE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>lipsum</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching ...</string>
+				<key>script</key>
+				<string>python lipsum-word.py "{query}"</string>
+				<key>subtext</key>
+				<string>Lorem Ipsum - generate words of Lorem Ipsum</string>
+				<key>title</key>
+				<string>lipsum</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B8515109-A2CE-45D1-816B-6517B1964C24</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>lipsum</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching ...</string>
+				<key>script</key>
+				<string>python lipsum-byte.py "{query}"</string>
+				<key>subtext</key>
+				<string>Lorem Ipsum - generate bytes of Lorem Ipsum</string>
+				<key>title</key>
+				<string>lipsum</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>352B093C-258E-4E08-BD07-2FD051AEA8D6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>352B093C-258E-4E08-BD07-2FD051AEA8D6</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
+		</dict>
 		<key>B848A929-7C71-4C67-9421-A89F88EF9D3E</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>B8515109-A2CE-45D1-816B-6517B1964C24</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
 		<key>BF23C4F2-2434-4FFF-AF97-6B31600CF619</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>E6B8B929-1A35-43DA-BFDC-9248CBEA41BE</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
