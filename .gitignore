@@ -4,3 +4,6 @@ __pycache__/
 
 # pyCharm
 .idea
+
+# Rope Project via python-mode
+.ropeproject/
