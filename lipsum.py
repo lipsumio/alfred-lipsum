@@ -1,13 +1,12 @@
 # encoding: utf-8
 
-import sys
-from workflow import Workflow, ICON_WEB, web
+from workflow import web
 
 
 BASE_URL = "http://lipsum.com/feed/json"
 
 
-def main(wf):
+def lipsum(wf, what):
     # Get Query from Alfred
     if wf.args[0]:
         query = wf.args[0]
@@ -16,7 +15,7 @@ def main(wf):
 
     # Generate Params
     params = dict(
-        what='paras',
+        what=what,
         amount=query,
         start='no',
     )
@@ -30,14 +29,9 @@ def main(wf):
 
     # Return result to Alfred
     wf.add_item(
-        title=result["feed"]["lipsum"],
+        title=str(query) + " " + what + " >  " + result["feed"]["lipsum"],
         subtitle=result["feed"]["generated"],
         arg=result["feed"]["lipsum"],
         valid=True,
     )
     wf.send_feedback()
-
-
-if __name__ == u"__main__":
-    wf = Workflow()
-    sys.exit(wf.run(main))
