@@ -2,12 +2,14 @@
 
 import unittest
 from workflow import web
-from lipsum import BASE_URL
+
+
+TARGET_URL = "http://lipsum.com/feed/json?what=paras&amount=1&start=no"
 
 
 class LipsumTest(unittest.TestCase):
     def setUp(self):
-        self.response = web.get(BASE_URL)
+        self.response = web.get(TARGET_URL)
 
     def test_request_should_return_status_code_200(self):
         self.assertEqual(

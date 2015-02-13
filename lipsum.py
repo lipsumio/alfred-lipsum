@@ -4,12 +4,25 @@ import sys
 from workflow import Workflow, ICON_WEB, web
 
 
-BASE_URL = "http://lipsum.com/feed/json?what=paras&amount=1&start=no"
+BASE_URL = "http://lipsum.com/feed/json"
 
 
 def main(wf):
+    # Get Query from Alfred
+    if wf.args[0]:
+        query = wf.args[0]
+    else:
+        query = 1
+
+    # Generate Params
+    params = dict(
+        what='paras',
+        amount=query,
+        start='no',
+    )
+
     # Request Lorem Ipsum via lipsum.com
-    response = web.get(BASE_URL)
+    response = web.get(BASE_URL, params)
     response.raise_for_status()
 
     # Parse JSON from Response
