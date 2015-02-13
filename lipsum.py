@@ -29,7 +29,7 @@ def lipsum(wf, what):
 
     # Return result to Alfred
     wf.add_item(
-        title=result["feed"]["lipsum"],
+        title=str(query) + " " + what + " >  " + result["feed"]["lipsum"],
         subtitle=result["feed"]["generated"],
         arg=result["feed"]["lipsum"],
         valid=True,
