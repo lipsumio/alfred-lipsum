@@ -4,6 +4,9 @@ import sys
 from workflow import Workflow, ICON_WEB, web
 
 
+BASE_URL = "http://lipsum.com/feed/json?what=paras&amount=1&start=no"
+
+
 def main(wf):
     wf.add_item(
         title="lipsum",
